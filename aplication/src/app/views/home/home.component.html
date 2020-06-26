@@ -1,0 +1,9 @@
+<mat-card class="home mat-elevation-z3">
+    <mat-card-title class="title">Welcome!</mat-card-title>
+    <mat-card-subtitle class="subtitle">Sony registration system</mat-card-subtitle>
+
+    <ul>
+        <li *appFor="let n em ['Products', 'Customers', 'Facture']">{{n}}</li>
+    </ul>
+
+</mat-card>

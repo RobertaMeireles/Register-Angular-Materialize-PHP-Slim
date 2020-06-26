@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>Register Invoices</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Customer" [(ngModel)]="invoice.id_cliente" name="id_cliente">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Product" [(ngModel)]="invoice.products" name="products">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createInvoice()" color="primary">Save</button>
+    <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>

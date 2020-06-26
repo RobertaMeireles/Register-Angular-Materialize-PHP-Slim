@@ -1,0 +1,16 @@
+<mat-sidenav-container class="container">
+
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/"><i class="material-icons"> home </i>Home</a>
+            <a mat-list-item routerLink="/products"><i class="material-icons"> storefront </i>Store</a>
+            <a mat-list-item routerLink="/customers"><i class="material-icons"> mood </i>Customers</a>
+            <a mat-list-item routerLink="/invoices"><i class="material-icons"> local_grocery_store </i>Invoices</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content"> <!--telas de acordo com a navegação indicando as rotas-->
+        <router-outlet></router-outlet> 
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

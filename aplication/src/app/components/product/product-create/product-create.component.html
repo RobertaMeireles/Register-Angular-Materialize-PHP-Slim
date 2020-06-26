@@ -1,0 +1,21 @@
+<mat-card>
+    <mat-card-title>Register </mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Designation" [(ngModel)]="product.designacao" name="designacao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Description" [(ngModel)]="product.descricao" name="descricao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Price (€)" [(ngModel)]="product.preco" name="preco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Category" [(ngModel)]="product.id_categoria" name="id_categoria">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="createProduct()" color="primary">Save</button>
+    <button mat-raised-button (click)="cancel()">Cancel</button>
+</mat-card>
+

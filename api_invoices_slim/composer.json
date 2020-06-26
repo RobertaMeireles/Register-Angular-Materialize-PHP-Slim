@@ -1,0 +1,19 @@
+{
+    "name": "fcosta/invoices-api",
+    "authors": [
+        {
+            "name": "Francisco Costa",
+            "email": "jfcpcosta@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":{
+            "Core\\": "src/Core",
+            "InvoicesApp\\": "src/InvoicesApp"
+        }
+    },
+    "require": {
+        "slim/slim": "3.12.1",
+        "emarref/jwt": "^1.0"
+    }
+}
